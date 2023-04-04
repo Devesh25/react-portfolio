@@ -20,7 +20,7 @@ const Footer = () => {
                 size={20}
                 style={{ color: "#fff", marginRight: "2rem" }}
               ></FaHome>
-              123 House Society,India
+              124 Daron Center,West Abigaylestad,81754
             </h4>
 
             <div>

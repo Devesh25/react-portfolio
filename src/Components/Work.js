@@ -19,7 +19,7 @@ const Work = () => {
                 occaecat id. Consectetur duis ullamco ex cupidatat amet aliqua
                 cillum do non laboris tempor. Nisi est sint consequat commodo
                 aliquip quis veniam. Enim fugiat eu minim nostrud aliquip ea
-                fugiat mollit ullamco quis do.
+                fugiat mollit ullamco quis do..
               </p>
               <div className="pro-btn">
                 <NavLink to="url.com" className="btn">
