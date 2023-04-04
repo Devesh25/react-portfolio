@@ -1,0 +1,11 @@
+.about p {
+  width: 60%;
+  height: 100%;
+  margin-left: 20%;
+  padding: 30px;
+  border: 5px outset yellow;
+}
+.about h2 {
+  text-align: center;
+  margin: 10px;
+}
