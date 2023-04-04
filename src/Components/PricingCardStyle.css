@@ -1,0 +1,40 @@
+.pricing {
+  width: 100%;
+  padding: 6rem 1rem;
+  background: #000;
+}
+.card-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 200px;
+}
+.card {
+  border: 1px solid #eee;
+  text-align: center;
+  padding: 1rem;
+}
+.card:hover {
+  background-color: #5b5b5c;
+}
+.card h3 {
+  font-size: 1.4rem;
+  padding: 1rem;
+  color: yellow;
+}
+.card p {
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.bar {
+  border-bottom: 1px solid #eee;
+  width: 50%;
+  margin: 1.5rem auto;
+  display: block;
+}
+.btc {
+  font-size: 4rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
