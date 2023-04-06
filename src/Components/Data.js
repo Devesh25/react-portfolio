@@ -1,29 +1,63 @@
-import React, { useEffect } from "react";
-import { ReactDOM } from "react";
+import React from "react";
+import "./DataStyle.css";
+class App extends React.Component {
+  // Constructor
+  constructor(props) {
+    super(props);
 
-const Data = () => {
-  let isLoading = "Data is Coming From Server Please Wait a While";
-  let API = "http://hn.algolia.com/api/v1/search?query=html";
+    this.state = {
+      items: [],
+      DataisLoaded: false,
+    };
+  }
 
-  const fechApiData = async (url) => {
-    try {
-      const res = await fetch(url);
-      const data = await res.json();
-      console.log(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // ComponentDidMount is used to
+  // execute the code
+  componentDidMount() {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((res) => res.json())
+      .then((json) => {
+        this.setState({
+          items: json,
+          DataisLoaded: true,
+        });
+      });
+  }
+  render() {
+    const { DataisLoaded, items } = this.state;
+    if (!DataisLoaded)
+      return (
+        <div>
+          <h1> Pleses wait some time.... </h1>{" "}
+        </div>
+      );
 
-  useEffect(() => {
-    fechApiData(API);
-  }, []);
-  return (
-    <>
-      <h1>News Post Data</h1>
-      <h2>{isLoading}</h2>
-    </>
-  );
-};
+    return (
+      <div className="App">
+        <h1> Fetch data from an api in react </h1>{" "}
+        <th>
+          <td>ID</td>
+          <td>Title</td>
+          <td>Body</td>
+        </th>
+        {items.map((item) => (
+          <table key={item.id}>
+            <tr>
+              <td>{item.id}</td>
+              <td>{item.title}</td>
+              <td>{item.body}</td>
+            </tr>
+          </table>
 
-export default Data;
+          // <ol key={item.id}>
+          //   ID: {item.id},<br />
+          //   Title: {item.title},<br />
+          //   Body: {item.body}, <br />
+          // </ol>
+        ))}
+      </div>
+    );
+  }
+}
+
+export default App;
