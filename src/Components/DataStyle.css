@@ -1,0 +1,17 @@
+.App {
+  text-align: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.App ol {
+  margin: 50px;
+}
+.App table {
+  width: 100%;
+  border: 1px solid yellow;
+}
+.App th {
+  font-size: 15px;
+}
