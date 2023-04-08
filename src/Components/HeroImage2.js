@@ -9,6 +9,15 @@ class HeroImage2 extends Component {
           <div className="heading">
             <h1>{this.props.heading}</h1>
             <p>{this.props.text}</p>
+            <a
+              name=""
+              id=""
+              class="btn btn-primary"
+              href="contact"
+              role="button"
+            >
+              CONTACT
+            </a>
           </div>
         </div>
       </>

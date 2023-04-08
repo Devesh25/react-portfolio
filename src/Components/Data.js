@@ -34,11 +34,6 @@ class App extends React.Component {
 
     return (
       <div className="App">
-<<<<<<< HEAD
-        
-=======
-   
->>>>>>> 6fd24fae0d113ea0383c30ff4e8a58c7da7161a3
         <th>
           <td>ID</td>
           <td>Title</td>

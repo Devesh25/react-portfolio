@@ -5,15 +5,20 @@
 .project-container {
   max-width: 1140px;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 200px;
-  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-gap: 100px;
+  padding-bottom: 1rem;
 }
 .project-card {
-  background: #1a1919;
+  background: #232323;
   padding: 1.2rem 1rem;
 }
+.project-card:hover {
+  background-color: rgb(57, 59, 5);
+}
+
 .project-card img {
   width: 100%;
 }

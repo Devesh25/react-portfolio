@@ -3,9 +3,13 @@
   height: 100%;
   margin-left: 20%;
   padding: 30px;
-  border: 5px outset yellow;
+  border: 5px outset rgb(186, 186, 167);
 }
 .about h2 {
   text-align: center;
   margin: 10px;
+}
+.about p:hover {
+  background-color: rgb(117, 117, 111);
+  /* color: black; */
 }

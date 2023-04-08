@@ -6,14 +6,16 @@
 .card-container {
   max-width: 1140px;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr); */
   grid-gap: 200px;
 }
 .card {
   border: 1px solid #eee;
   text-align: center;
+  margin: 1rem;
   padding: 1rem;
+  background-color: rgb(43, 43, 38);
 }
 .card:hover {
   background-color: #5b5b5c;

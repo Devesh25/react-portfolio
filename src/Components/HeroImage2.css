@@ -25,10 +25,12 @@
   justify-content: center;
   align-items: center;
 }
+
 .hero-img h1 {
   font-size: 3.4rem;
 }
 .hero-img p {
   font-size: 1.4rem;
   text-align: center;
+  width: 20rem;
 }
