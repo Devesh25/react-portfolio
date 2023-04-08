@@ -34,7 +34,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <h1> Fetch data from an api</h1>{" "}
+        <h5> Fetch data from an api</h5>
         <th>
           <td>ID</td>
           <td>Title</td>

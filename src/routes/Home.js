@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Navbar />
       <HeroImg />
-      <Data />
+     
       <Footer />
     </>
   );
