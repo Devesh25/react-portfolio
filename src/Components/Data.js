@@ -37,7 +37,7 @@ class App extends React.Component {
 <<<<<<< HEAD
         
 =======
-        <h1> Fetch data from an api in react </h1>{" "}
+   
 >>>>>>> 6fd24fae0d113ea0383c30ff4e8a58c7da7161a3
         <th>
           <td>ID</td>
