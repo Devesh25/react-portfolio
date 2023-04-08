@@ -34,7 +34,11 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <h5> Fetch data from an api</h5>
+<<<<<<< HEAD
+        
+=======
+        <h1> Fetch data from an api in react </h1>{" "}
+>>>>>>> 6fd24fae0d113ea0383c30ff4e8a58c7da7161a3
         <th>
           <td>ID</td>
           <td>Title</td>
